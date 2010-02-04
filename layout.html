@@ -4,8 +4,16 @@
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<title>&#402;unc(tran)</title>
 		
-		<link rel="stylesheet" type="text/css" href="style/reset.css">
-		<link rel="stylesheet" href="style/frontpage.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style/reset.css" media="screen" charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style/frontpage.css" media="screen" charset="utf-8">
+		
+		<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.infieldlabel.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$("label").inFieldLabels();
+			});
+		</script>
 	</head>
 	<body>
 		<div id="container" class="center">
@@ -18,16 +26,24 @@
 					</p>
 					<form class="search" action="" method="get" accept-charset="utf-8">
 						<p>
-							<input type="text" name="query" size="60" value="">
+							<label for="query">function in thisLanguage to thatLanguage</label>
+							<input type="text" name="query" id="query" size="60" value="" autocomplete="off">
 							<input type="submit" value="Translate">
 						</p>
 					</form>
 				</div>
 			</div>
 			<div id="footer">
-				<a href="/developers.html">the developers</a>
-				| <a href="http://github.com/Burgestrand/functran">github repository</a>
-				| <a href="/contact.html">contact us</a>
+				<ul>
+					<li class="first">
+						<a href="/developers.html">The developers</a>
+					</li>
+					<li>
+						<a href="http://github.com/Burgestrand/functran">Github repository</a>
+					</li>
+					<li class="last">
+						<a href="/contact.html">Contact us</a>
+					</li>
 			</div>
 		</div>
 	</body>
