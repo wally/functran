@@ -23,15 +23,14 @@
 			</div>
 			<div id="content">
 					<h2>
-						<a href="?function=strtolower">strtolower</a> in <a href="?language=php">php</a> to <a href="?language=javascript">javascript</a>
+						2 results found for <a href="?function=strtolower">strtolower</a> in <a href="?language=php">php</a> to <a href="?language=javascript">javascript</a>.
 					</h2>
-
 				<ol>
-					<li class="box">
+					<li class="box" id="code_e9487456ffb063972e1127d3c45d02dc7e684f37">
 						<pre class="code javascript">document.write('Hello, world!')</pre>
                         <!-- Suggestion footer -->
                         <p class="footer">
-                            suggested by <a href="#">Kim Burgestrand</a> | <a href="#">512 +</a> / <a href="#">20 -</a>
+                            suggested by <a href="#">Kim Burgestrand</a> | 512 <img src="/images/thumb_up.png" alt="Thumb up"> / 20 <img src="/images/thumb_down.png" alt="Thumb down">
                         </p>
                        
                         <!-- Suugestion comments -->
@@ -54,11 +53,11 @@
                             </li>
                         </ol>
 					</li>
-					<li class="box">
+					<li class="box" id="code_f6ca08ea3c7a8253bb0eef65bd0df61e05924e9e">
                         <pre class="code javascript">var element = document.getElementsByTagName('body')[0]
 body.innerHTML = 'Hello, world!'</pre>
                         <p class="footer">
-                            suggested by <a href="#">OMGWTFBBQ</a> | <a href="#">512 +</a> / <a href="#">20 -</a>
+                            suggested by <a href="#">OMGWTFBBQ</a> | 512 <a href="#" class="no-border"><img src="/images/thumb_up-large.png" alt="Thumb up"></a> / 20 <a href="#" class="no-border"><img src="/images/thumb_down-large.png" alt="Thumb down"></a>
                         </p>
                    </li>
 				</ol>
@@ -81,9 +80,11 @@ body.innerHTML = 'Hello, world!'</pre>
             $('pre.code').each(function() {
                 var size = $(this).text().split('\n').length;
                 var content = "";
+                var hash = $(this).parent().attr('id').substr(5);
+                hash = hash.substr(0, 6);
                 for (var i = 1; i <= size; ++i)
                 {
-                    content += '<a href="#' + i + '">' + i + '</a>\n';
+                    content += '<a href="#line_' + i + '_' + hash + '" id="line_' + i + '_' +hash + '">' + i + '</a>\n';
                 }
                 $(this).html('<pre class="lines">' + content + '</pre>' + $(this).text());
             });
