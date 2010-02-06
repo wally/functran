@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>strtolower in php to javascript - &#402;unc(tran)</title>
+		
+		<link rel="stylesheet" type="text/css" href="style/reset.css" media="screen" charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style/style.css" media="screen" charset="utf-8">
+		
+		<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.infieldlabel.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$("label").inFieldLabels();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="container" class="center">
+			<div id="header">
+				<div class="wrap">
+					<h1><a href="/" title="Functran - translate functions into other languages">&#402;unc(tran)</a></h1>
+					<form class="search" action="" method="get" accept-charset="utf-8">
+						<input type="text" name="query" id="query" size="60" value="strtolower in php to javascript" autocomplete="off">
+						<input type="submit" value="Translate">						
+					</form>
+				</div>			
+				<div class="clear"></div>
+			</div>
+			<div id="content">
+					<h2>
+						<a href="?function=strtolower">strtolower</a> in <a href="?language=php">php</a> to <a href="?language=javascript">javascript</a>
+					</h2>
+
+				<ol>
+					<li class="box">
+						<pre class="code javascript">document.write('Hello, world!')</pre>
+                        <!-- Suggestion footer -->
+                        <p class="footer">
+                            suggested by <a href="#">Kim Burgestrand</a> | <a href="#">512 +</a> / <a href="#">20 -</a>
+                        </p>
+                       
+                        <!-- Suugestion comments -->
+                        <ol class="comments">
+                            <li id="comment_1">
+                                <div class="content">
+                                    <p>This does not work when using XHTML</p>
+                                </div>
+                                <p class="footer">
+                                    Comment <a href="#comment_1">#1</a> written by <a href="#">OMGWTFBBQ</a>
+                                </p>
+                            </li>
+                            <li id="comment_2">
+                                <div class="content">
+                                    <p>Why upvote this? #2 suggestion so much better</p>
+                                </div>
+                                <p class="footer">
+                                    Comment <a href="#comment_2">#2</a> written by <a href="#">/b/</a>
+                                </p>
+                            </li>
+                        </ol>
+					</li>
+					<li class="box">
+                        <pre class="code javascript">var element = document.getElementsByTagName('body')[0]
+body.innerHTML = 'Hello, world!'</pre>
+                        <p class="footer">
+                            suggested by <a href="#">OMGWTFBBQ</a> | <a href="#">512 +</a> / <a href="#">20 -</a>
+                        </p>
+                   </li>
+				</ol>
+			</div>
+			<div id="footer">
+				<ul>
+					<li class="first">
+						<a href="/developers.html">The developers</a>
+					</li>
+					<li>
+						<a href="http://github.com/Burgestrand/functran">Github repository</a>
+					</li>
+					<li class="last">
+						<a href="/contact.html">Contact us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+            $('pre.code').each(function() {
+                var size = $(this).text().split('\n').length;
+                var content = "";
+                for (var i = 1; i <= size; ++i)
+                {
+                    content += '<a href="#' + i + '">' + i + '</a>\n';
+                }
+                $(this).html('<pre class="lines">' + content + '</pre>' + $(this).text());
+            });
+        </script>
+	</body>
+</html>
