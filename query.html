@@ -72,8 +72,28 @@
                         <pre class="code javascript">var element = document.getElementsByTagName('body')[0]
 body.innerHTML = 'Hello, world!'</pre>
                         <p class="footer">
-                            suggested by <a href="#">OMGWTFBBQ</a> | 512 <a href="#" class="no-border"><img src="/images/thumb_up-large.png" alt="Thumb up"></a> / 20 <a href="#" class="no-border"><img src="/images/thumb_down-large.png" alt="Thumb down"></a>
+                            suggested by <a href="#">OMGWTFBBQ</a> | No comments - <a href="#comments_2" class="comments-link">add one!</a> | 512 <a href="#" class="no-border"><img src="/images/thumb_up-large.png" alt="Thumb up"></a> / 20 <a href="#" class="no-border"><img src="/images/thumb_down-large.png" alt="Thumb down"></a>
                         </p>
+                        
+                        <!-- Suugestion comments -->
+                        <ol class="comments" id="comments_2">
+                            <li class="comment-form" id="comment_form_1">
+								<h2><span class="first">&nbsp;</span>Add a comment<span class="second">&nbsp;</span></h2>
+                            	<form action="?addcomment" method="post" accept-charset="utf-8">
+                            		<label for="textarea_1" class="label-left">Your comment:</label>
+                            		<div class="clear"></div>
+                            		<textarea cols="20" rows="6" name="comment" id="textarea_1"></textarea>
+
+                            		<ul>
+                            			<li><label for="name_1">Name:</label> <input type="text" name="name" id="name_1"></li>
+                            			<li><label for="email_1">Email:</label> <input type="text" name="email" id="email_1"></li>
+                            			<li><label for="website_1">Website:</label> <input type="text" name="website" id="website_1"></li>
+                            			<li><input type="submit" value="Add your comment"></li>
+                            		</ul>
+                            	</form>
+                            		<div class="clear"></div>
+                            </li>
+                        </ol>
                    </li>
 				</ol>
 			</div>
