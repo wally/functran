@@ -247,7 +247,11 @@ pre
 }
 .listing .language
 {
-	margin-bottom: 4px;
+	margin-bottom: 12px;
+}
+.listing .rating
+{
+	float: right;
 }
 .listing .first
 {
