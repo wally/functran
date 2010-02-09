@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>&#402;unc(tran)</title>
+		
+		<link rel="stylesheet" type="text/css" href="style/reset.css" media="screen" charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style/frontpage.css" media="screen" charset="utf-8">
+		
+		<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.infieldlabel.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$("label").inFieldLabels();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="container" class="center">
+			<div id="header">
+				<div class="wrap">
+					<h1><a href="/">&#402;unc(tran)</a></h1>
+					<p>
+						Enter your query in the format <code class="query"><a href="php/javascript/strtolower.html">strtolower in php to javascript</a></code>.
+						Any element of the query can be left out to provide a different type of result. <a href="how-it-works.html">Find out more.</a>
+					</p>
+					<form class="search" action="" method="get" accept-charset="utf-8">
+						<p>
+							<label for="query">function in thisLanguage to thatLanguage</label>
+							<input type="text" name="query" id="query" size="60" value="" autocomplete="off">
+							<input type="submit" value="Translate">
+						</p>
+					</form>
+				</div>
+			</div>
+			<div id="footer">
+				<ul>
+					<li class="first">
+						<a href="/developers.html">The developers</a>
+					</li>
+					<li>
+						<a href="http://github.com/Burgestrand/functran">Github repository</a>
+					</li>
+					<li class="last">
+						<a href="/contact.html">Contact us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
