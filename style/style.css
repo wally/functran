@@ -104,7 +104,7 @@ h1 a
 
 .search input[type="submit"]
 {
-	background: url(/images/button-translate.png) top left no-repeat;
+	background: url(../images/button-translate.png) top left no-repeat;
 	border: none;
 	cursor: pointer;
 	height: 28px;
@@ -204,7 +204,7 @@ h1 a
 
 #content .comments .comment-form h2
 {
-	background: url(/images/add-a-comment.png) no-repeat top left;
+	background: url(../images/add-a-comment.png) no-repeat top left;
 	height: 70px;
 	margin: 0 7.3em;
 	text-indent: -9999px;

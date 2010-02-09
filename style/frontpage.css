@@ -98,7 +98,7 @@ h1 + p {
 
 .search input[type="submit"]
 {
-	background: url(/images/button-translate.png) top left no-repeat;
+	background: url(../images/button-translate.png) top left no-repeat;
 	border: none;
 	cursor: pointer;
 	height: 28px;
